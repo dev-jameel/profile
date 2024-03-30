@@ -35,7 +35,9 @@ function App() {
       <div id='portfolio'>
         <Projects />
       </div>
-      <Contact />
+      <div id='contact'>
+        <Contact />
+      </div>
     </Router>
   );
 }
