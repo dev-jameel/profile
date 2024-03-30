@@ -10,7 +10,7 @@ import ebrandz from './logos/ebrandz.png';
 import siws from './logos/siws.png';
 import gnc from './logos/gnc.png';
 
-import bitshala from './images/byteschool.jpg';
+import bitshala from './images/bitshala.png';
 import kulfi from './images/kulfi.jpg';
 import tailor from './images/tailor.jpg';
 import resumet from './images/resumet.jpg';

@@ -20,6 +20,11 @@ const Projects = () => {
                                     <abbr>Source Code</abbr>
                                 </a>
                             )}
+                            {project.live_link && (
+                                <a href={project.live_link} target="_blank" rel="noopener noreferrer" className='project-link'>
+                                    <abbr>View Live</abbr>
+                                </a>
+                            )}
                             <div className="tags">
                                 {project.tags.map((tag, index) => (
                                     <p key={`tag-${index}`} className="tag">

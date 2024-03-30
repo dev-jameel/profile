@@ -83,7 +83,7 @@ export const projects = [
         tags: ["react", "html", "css", "javascript", "express", "mongodb"],
         image: bitshala,
         source_code_link: "",
-        live_link: "https://www.byteschool.in",
+        live_link: "https://bitshala.in",
     },
     {
         name: "Resumet",
