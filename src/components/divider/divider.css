@@ -5,6 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background: var(--secondary-color);
     overflow: hidden;
 }
 
@@ -19,17 +20,18 @@
 }
 
 .divider-line:nth-child(1) {
-    transform: rotate(3deg);
+    transform: rotate(3.5deg);
+    z-index: 2;
 }
 
 .divider-line:nth-child(2) {
-    transform: rotate(-3deg);
+    transform: rotate(-3.5deg);
     opacity: 0.3;
-    z-index: -1;
+    z-index: 1;
 }
 
 .divider-line h2 {
-    font-size: clamp(1.8em, 3vw, 12em);
+    font-size: clamp(1.8em, 3vw, 10em);
     text-align: center;
     font-weight: 600;
     color: #000;
