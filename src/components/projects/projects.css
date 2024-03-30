@@ -133,7 +133,11 @@
         width: 100% !important;
     }
 
+    .project-content {
+        padding: 12px;
+    }
+
     .tags {
-        gap: 8px;
+        gap: 0 8px;
     }
 }
