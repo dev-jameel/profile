@@ -158,6 +158,7 @@
     .navbar-container,
     .navbar-container.sticky {
         padding: 15px 30px;
+        position: absolute;
     }
 
     #menu-toggle {
@@ -169,7 +170,6 @@
         top: -500px;
         right: 0;
         width: 98%;
-        max-width: 1000px;
         background: rgba(12, 12, 12, 0.6);
         backdrop-filter: blur(6px);
         display: block;
