@@ -39,7 +39,7 @@
 }
 
 .contact-content h4 {
-    font-size: clamp(0.8em, 2vw, 1em);
+    font-size: clamp(0.9em, 2vw, 1em);
 }
 
 .contact-content h4 a {
@@ -50,7 +50,7 @@
 }
 
 .contact-content p {
-    font-size: clamp(0.9em, 3vw, 1.1em);
+    font-size: clamp(1em, 3vw, 1.1em);
     text-align: center;
 }
 
@@ -62,6 +62,6 @@
 }
 
 .copyrights p {
-    font-size: clamp(0.7em, 3vw, 0.9em);
+    font-size: clamp(0.8em, 3vw, 0.9em);
     text-align: center;
 }

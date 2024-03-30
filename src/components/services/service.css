@@ -19,7 +19,7 @@
 }
 
 .service-content p {
-    font-size: clamp(0.9em, 3vw, 1.1em);
+    font-size: clamp(1em, 3vw, 1.1em);
 }
 
 .services-list {
