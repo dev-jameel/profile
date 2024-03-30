@@ -39,7 +39,7 @@ const About = () => {
                 <div><i className="fa-brands fa-react"></i><h4>React</h4></div>
                 <div><i className="fa-brands fa-php"></i><h4>PHP</h4></div>
                 <div><i className="fa-brands fa-laravel"></i><h4>Laravel</h4></div>
-                <div><i className="fa-brands fa-codepen"></i><h4>CodeIgniter</h4></div>
+                <div><i className="fa-solid fa-fire-flame-curved"></i><h4>CodeIgniter</h4></div>
                 <div><i className="fa-brands fa-node-js"></i><h4>Node</h4></div>
                 <div><i className="fa-brands fa-bootstrap"></i><h4>Bootstrap</h4></div>
                 <div><i className="fa-brands fa-git-alt"></i><h4>Git</h4></div>
