@@ -1,0 +1,208 @@
+.navbar-container {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: transparent;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#logo {
+    color: white;
+    font-size: 2em;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+        color: var(--primary-color-dark);
+    }
+}
+
+.navbar {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: 0.3s all ease-in-out;
+}
+
+.navbar-logo {
+    width: 80px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navbar-logo img {
+    width: 40px;
+    height: auto;
+}
+
+.navbar-menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-menu-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-menu-list li {
+    margin: 0 15px;
+    font-size: 1em;
+    font-weight: 500;
+    position: relative;
+    max-width: 100px;
+}
+
+.navbar-menu-list li::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: var(--primary-color);
+    transition: 0.3s all ease-in-out;
+}
+
+.navbar-menu-list li:hover::after {
+    width: 100%;
+}
+
+.navbar-menu-list li a:hover {
+    color: var(--tertiary-color);
+}
+
+.navbar-container.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(01, 01, 01, 0.8);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    z-index: 1000;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.contact-btn {
+    position: relative;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding: 10px 20px;
+    border: 1px solid var(--primary-color-dark);
+    transition: 0.3s all ease-in-out;
+    max-width: 200px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.contact-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: var(--primary-color-dark);
+    color: #fff;
+    z-index: -1;
+    transition: 0.3s all ease-in-out;
+}
+
+.contact-btn:hover::before {
+    width: 100%;
+    height: 100%;
+}
+
+.contact-btn:hover a {
+    color: #fff;
+    z-index: 1;
+}
+
+.navlinkActive {
+    font-family: var(--header-font);
+    font-size: 0.9em;
+    font-weight: 500;
+    color: var(--primary-dark);
+    background: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    list-style: none;
+}
+
+.navlinkActive a {
+    text-decoration: none;
+    color: var(--primary-dark);
+}
+
+#menu-toggle {
+    display: none;
+    color: #fff;
+    font-size: 1.6em;
+    cursor: pointer;
+}
+
+@media screen and (max-width:980px) {
+
+    .navbar-container,
+    .navbar-container.sticky {
+        padding: 15px 30px;
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+
+    .navbar-menu {
+        position: absolute;
+        top: -500px;
+        right: 0;
+        width: 98%;
+        max-width: 1000px;
+        background: rgba(12, 12, 12, 0.6);
+        backdrop-filter: blur(6px);
+        display: block;
+        margin: 0 8px;
+        padding: 25px 15px 15px 15px;
+        opacity: 0;
+        transition: 0.6s all ease-in-out;
+        z-index: -5;
+    }
+
+    .navbar .navbar-menu-list {
+        display: block;
+    }
+
+    .navbar .navbar-menu-list li {
+        margin-bottom: 25px;
+    }
+
+    .navlinkActive {
+        margin-bottom: 12px;
+    }
+
+    .menu-active {
+        position: absolute;
+        top: 90%;
+        display: block;
+        opacity: 1;
+        transition: 0.2s all ease-in-out opacity 0.1s ease-in-out;
+    }
+}
+
+@media screen and (max-width:980px) {
+    .navbar-menu {
+        margin: 0 4px 0 12px;
+    }
+}

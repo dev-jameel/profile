@@ -1,0 +1,83 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: HeadingFont;
+  src: url(./assets/fonts/Vintage-Voyage-normal.otf) format('opentype');
+}
+
+:root {
+  --primary-color: #00C9DC;
+  --primary-color-dark: #0C55FE;
+  --secondary-color: #010101;
+  --tertiary-color: #8a8a8a;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  line-height: 1.6em;
+}
+
+h1 {
+  font-size: clamp(1.3em, 4vw, 2em);
+}
+
+span,
+p,
+a,
+abbr {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+p {
+  color: var(--tertiary-color);
+  line-height: 1.4em;
+  margin: 12px 0;
+}
+
+a {
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s all ease-in-out;
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+li {
+  list-style: none;
+}
+
+abbr {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: clamp(1em, 2vw, 1.2em);
+}
+
+/* Custom Scrollbar Design */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #00C9DC 0%, #0C55FE 100%);
+  border-radius: 8px;
+}

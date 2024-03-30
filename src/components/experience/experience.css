@@ -1,0 +1,40 @@
+.experiences-container {
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+    height: auto;
+    padding: 30px 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.experiences-content {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.vertical-timeline-element-subtitle {
+    color: var(--primary-color);
+}
+
+.points {
+    font-size: 0.91em !important;
+}
+
+.timeline-date {
+    margin: 0 12px;
+    font-size: clamp(1em, 4vw, 1.2em) !important;
+}
+
+@media only screen and (max-width: 1024px) {
+    .experiences-container {
+        padding: 20px;
+    }
+
+    .timeline-icon {
+        width: 10% !important;
+    }
+}

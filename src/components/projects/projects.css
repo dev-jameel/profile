@@ -1,0 +1,135 @@
+.projects-container {
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+    height: auto;
+    padding: 50px 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: #111;
+    overflow: hidden;
+}
+
+.projects-content {
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.projects-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.project-card {
+    position: relative;
+    width: 100%;
+    max-width: 560px;
+    height: 300px;
+    cursor: pointer;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.project-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgb(1, 1, 1), rgba(17, 17, 17, 0.7));
+    transition: all 0.2s ease-in-out;
+    z-index: 1;
+    opacity: 0;
+}
+
+.project-card:hover::before {
+    opacity: 1;
+}
+
+.project-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1);
+    transition: transform 0.3s;
+}
+
+.project-card:hover img {
+    transform: scale(1.03);
+}
+
+.project-content {
+    position: absolute;
+    bottom: -200px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 6px 15px;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    z-index: 2;
+}
+
+.project-card:hover .project-content {
+    bottom: 0;
+    opacity: 1;
+}
+
+.project-content p {
+    color: #ddd;
+}
+
+.tags {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.tag {
+    background: var(--primary-color-dark);
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 50px;
+    font-size: 12px;
+}
+
+.project-link {
+    position: relative;
+}
+
+.project-link::before {
+    content: '\f178';
+    font-family: 'FontAwesome';
+    position: absolute;
+    right: -20%;
+    font-size: 16px;
+    color: var(--primary-color);
+    opacity: 0;
+    transition: opacity 0.3 ease-in-out;
+}
+
+.project-link:hover::before {
+    right: -25%;
+    opacity: 1;
+}
+
+@media screen and (max-width: 1024px) {
+    .projects-container {
+        padding: 30px;
+    }
+
+    .project-card {
+        width: 100% !important;
+    }
+}
