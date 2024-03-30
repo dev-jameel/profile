@@ -158,7 +158,6 @@
     .navbar-container,
     .navbar-container.sticky {
         padding: 15px 30px;
-        position: absolute;
     }
 
     #menu-toggle {
