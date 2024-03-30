@@ -77,9 +77,9 @@ export const educations = [
 
 export const projects = [
     {
-        name: "ByteSchool",
+        name: "BitShala",
         description:
-            `ByteSchool is the student communities website that provides a one-stop platform for students to learn new skills, network with peers, apply for internships & jobs and grow as an individual. `,
+            `BitShala is the student communities website that provides a one-stop platform for students to learn new skills, network with peers, apply for internships & jobs and grow as an individual. `,
         tags: ["react", "html", "css", "javascript", "express", "mongodb"],
         image: bitshala,
         source_code_link: "",
