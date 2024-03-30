@@ -154,4 +154,14 @@
     .about-left p {
         width: 100%;
     }
+
+    .skills {
+        gap: 14px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .skills {
+        gap: 12px;
+    }
 }
