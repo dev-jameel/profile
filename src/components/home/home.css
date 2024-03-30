@@ -25,7 +25,7 @@
     justify-content: flex-start;
     align-items: center;
     background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.9));
-    padding: 50px;
+    padding: 50px 30px;
     z-index: 2;
 }
 
@@ -47,7 +47,7 @@
 .hero h1 {
     position: relative;
     font-family: HeadingFont, sans-serif;
-    font-size: clamp(3rem, 9vw, 8rem);
+    font-size: clamp(3.5rem, 9vw, 8rem);
     font-weight: 600;
     color: #fff;
     letter-spacing: 8px;
@@ -57,7 +57,7 @@
 
 .hero p {
     color: var(--tertiary-color);
-    font-size: clamp(1em, 3vw, 1.3rem);
+    font-size: clamp(1.1em, 3vw, 1.5rem);
     max-width: 600px;
     line-height: 1.5em;
 }
@@ -121,6 +121,6 @@
     .hero,
     .hero-overlay,
     #myVideo {
-        height: 80vh !important;
+        height: 90vh !important;
     }
 }
