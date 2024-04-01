@@ -82,3 +82,10 @@ abbr {
   background: linear-gradient(180deg, #00C9DC 0%, #0C55FE 100%);
   border-radius: 8px;
 }
+
+#root{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
