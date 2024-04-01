@@ -27,7 +27,7 @@
 .project-card {
     position: relative;
     width: 100%;
-    max-width: 560px;
+    max-width: 380px;
     height: 300px;
     cursor: pointer;
     border-radius: 6px;
