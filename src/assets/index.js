@@ -15,4 +15,6 @@ import kulfi from './images/kulfi.jpg';
 import tailor from './images/tailor.jpg';
 import resumet from './images/resumet.jpg';
 
-export { logo, bgvideo, webdevIcon, uiuxIcon, wpdevIcon, logoDesignIcon, ebrandz, gnc, siws, bitshala, kulfi, tailor, resumet };
+import myResume from './resume_04_2024.pdf';
+
+export { logo, bgvideo, webdevIcon, uiuxIcon, wpdevIcon, logoDesignIcon, ebrandz, gnc, siws, bitshala, kulfi, tailor, resumet, myResume };

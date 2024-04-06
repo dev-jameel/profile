@@ -95,11 +95,11 @@
     transition: background-color 0.3s ease-in-out;
 }
 
-.contact-btn {
+.download-cv-btn {
     position: relative;
-    font-size: 1.1em;
+    font-size: clamp(0.9em, 2vw, 1.1em);
     font-weight: 500;
-    padding: 10px 20px;
+    padding: 14px 24px 10px 24px;
     border: 1px solid var(--primary-color-dark);
     transition: 0.3s all ease-in-out;
     max-width: 200px;
@@ -108,7 +108,7 @@
     cursor: pointer;
 }
 
-.contact-btn::before {
+.download-cv-btn::before {
     content: '';
     position: absolute;
     top: 0;
@@ -121,12 +121,12 @@
     transition: 0.3s all ease-in-out;
 }
 
-.contact-btn:hover::before {
+.download-cv-btn:hover::before {
     width: 100%;
     height: 100%;
 }
 
-.contact-btn:hover {
+.download-cv-btn:hover {
     color: #fff;
     z-index: 1;
 }
@@ -210,5 +210,9 @@
     .navbar-menu-list a {
         width: 100%;
         display: block;
+    }
+
+    .download-cv-btn {
+        padding: 12px 20px 8px 20px;
     }
 }

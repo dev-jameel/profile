@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from 'react';
-// import { logo } from '../../assets';
+import { myResume } from '../../assets';
 import './navbar.css';
 
 const Navbar = () => {
@@ -38,8 +38,8 @@ const Navbar = () => {
                         <a href="#portfolio" onClick={toggleMenu}>Portfolio</a>
                         <a href="#contact" onClick={toggleMenu}>Contact</a>
                     </ul>
-                    <a className="contact-btn" href="#contact">
-                        Get In Touch
+                    <a className="download-cv-btn" href={myResume} download={false}>
+                        Download CV
                     </a>
                 </div>
             </div>
