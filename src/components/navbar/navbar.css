@@ -101,11 +101,13 @@
     font-weight: 500;
     padding: 14px 24px 10px 24px;
     border: 1px solid var(--primary-color-dark);
+    border-radius: 50px;
     transition: 0.3s all ease-in-out;
     max-width: 200px;
     text-align: center;
     color: #fff;
     cursor: pointer;
+    overflow: hidden;
 }
 
 .download-cv-btn::before {
@@ -115,7 +117,8 @@
     left: 0;
     width: 0%;
     height: 100%;
-    background: var(--primary-color-dark);
+    background: linear-gradient(153deg, var(--primary-color-dark), var(--primary-color));
+    border-radius: 50px;
     color: #fff;
     z-index: -1;
     transition: 0.3s all ease-in-out;

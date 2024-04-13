@@ -17,11 +17,10 @@ const Experience = () => {
                             contentStyle={{
                                 background: "#2b2b2b90",
                                 color: "#fff",
-                                border: "1px solid #fff",
-                                borderRadius: "0px",
+                                borderRadius: "12px",
                                 boxShadow: "0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23)"
                             }}
-                            contentArrowStyle={{ borderRight: "8px solid  #fff" }}
+                            contentArrowStyle={{ borderRight: "8px solid  #2b2b2b90" }}
                             iconStyle={{ background: '#fff', display: 'flex', justifyContent: 'center', alignItems: 'center' }}
                             dateClassName='timeline-date'
                             icon={<img src={experience.icon} alt={experience.company_name} width="40px" />}
