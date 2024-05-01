@@ -38,8 +38,8 @@
 .service-card {
     position: relative;
     width: 100%;
-    max-width: 230px;
-    padding: 24px;
+    max-width: 250px;
+    padding: 26px;
     display: flex;
     flex-direction: column;
     justify-content: center;
