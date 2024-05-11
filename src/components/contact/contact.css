@@ -65,3 +65,7 @@
     font-size: clamp(0.8em, 3vw, 0.9em);
     text-align: center;
 }
+
+/* .contact-container .divider .divider-line h2 {
+    font-size: 14px !important;
+} */

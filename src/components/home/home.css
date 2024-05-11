@@ -102,6 +102,10 @@
     transform: translateX(-50%);
 }
 
+.scroll-down-link:hover span::before {
+    box-shadow: 0 0 30px var(--primary-color), 0 0 30px var(--primary-color);
+}
+
 @keyframes scrollDownAnimation {
     0% {
         transform: translateY(0);

@@ -71,7 +71,7 @@ abbr {
 
 /* Custom Scrollbar Design */
 ::-webkit-scrollbar {
-  width: 3px;
+  width: 5px;
 }
 
 ::-webkit-scrollbar-track {
@@ -83,16 +83,20 @@ abbr {
   border-radius: 8px;
 }
 
-#root{
-  display:flex;
+#root {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-#home, #about, #services, #portfolio, #contact{
-  width:100%;
-  display:flex;
+#home,
+#about,
+#services,
+#portfolio,
+#contact {
+  width: 100%;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
